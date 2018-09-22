@@ -40,4 +40,7 @@ while pointer > -1:
         else:
             ITER[pointer]=0
             pointer = pointer - 1 #says we have to back-track two-steps (at least)
-            carry = 1
+            if pointer > -1:
+                carry = 1
+            else:
+                carry = 0
